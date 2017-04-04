@@ -1,0 +1,19 @@
+/*font-family: 'Libre Franklin', sans-serif;*/
+#contenidos{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    background: gray;
+     
+    }
+body {
+    background-color: black 
+}
+h1{
+    font-family: 'Libre Franklin', sans-serif;
+    margin-left: 10px;
+    font-size: 60px;
+    text-align: center;
+    
+}
