@@ -4,8 +4,9 @@
     height: auto;
     margin: auto;
     position: relative;
-    background: gray;
-     
+    
+    
+/*etiquetas*/
     }
 body {
     background-color: black 
@@ -13,7 +14,49 @@ body {
 h1{
     font-family: 'Libre Franklin', sans-serif;
     margin-left: 10px;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
-    
 }
+header{
+    width: 1000px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+nav{
+    width: 1000px;
+    height: 50px;
+    background-color: green;
+    border-radius: 10px;
+}
+ul{
+    margin: auto;
+    padding-top: 4px;
+}    
+ 
+ li{
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+    background-color: white;
+    margin: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black inset;
+    }   
+    
+/*clases*/
+.ancho_menu_home{width: 900px;}
+.ancho_menu_paginas{width: 970px;}
+
+.menu:link{padding: 7px; color: black; text-decoration:none}
+.menu:visited{padding: 7px; color: black; text-decoration:none}    
+.menu:hover{padding: 7px; color: black; text-decoration:none}
+.menu:active{padding: 7px; color: black; text-decoration:none}
+
+/*seudo clases*/
+
+li:hover{
+    background-color: blue;
+    box-shadow: 0 0 10px black inset;
+}
+    
+    
