@@ -1,56 +1,99 @@
 /*font-family: 'Libre Franklin', sans-serif;*/
+
 #contenidos{
-    width: 1000px;
+    width: 1200px;
     height: auto;
     margin: auto;
     position: relative;
     
     
 /*etiquetas*/
+
+    
     }
 body {
-    background-color: black 
+    background-color: brown 
 }
 h1{
+    margin-top: 40px;
     font-family: 'Libre Franklin', sans-serif;
     margin-left: 10px;
+    font-size: 60px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+h2{
+    margin-top: 10px;
+    margin-left: 270px;
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 40px;
     text-align: center;
 }
+
 header{
-    width: 1000px;
-    height: 120px;
-    background-color: rgba(255, 255, 255, 0.4);
+    
+    background-image: url(../img/UNAD.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 300px 150px;
+    width: 1200px;
+    height: 200px;
+    background-color: white;
+
 }
 nav{
+    margin: auto;
     width: 1000px;
-    height: 50px;
+    height: 60px;
     background-color: green;
     border-radius: 10px;
+
 }
 ul{
-    margin: auto;
-    padding-top: 4px;
+    padding-top: 6px;
+    display: block;
+    position: absolute;
+    margin-bottom: 4px;
+    
 }    
  
  li{
     float: left;
     list-style-type: none;
-    padding: 10px;
     background-color: white;
-    margin: 3px;
     border-radius: 10px;
     box-shadow: 0 0 10px black inset;
-    }   
+    padding: 12px;
+    margin: 0px;
+    width: auto;
+    height: auto;
+    align-content: center;
+    }
     
+li ul{
+      
+       display: none;
+       margin:  0px;
+    }
+li:hover ul{
+        display: block;
+    }
+
+section{
+    width: 700px;
+    background-color: white;
+    height: 600px;
+    float: left;
+}
 /*clases*/
 .ancho_menu_home{width: 900px;}
 .ancho_menu_paginas{width: 970px;}
 
-.menu:link{padding: 7px; color: black; text-decoration:none}
-.menu:visited{padding: 7px; color: black; text-decoration:none}    
-.menu:hover{padding: 7px; color: black; text-decoration:none}
-.menu:active{padding: 7px; color: black; text-decoration:none}
+.menu:link{color: black; text-decoration:none}
+.menu:visited{color: black; text-decoration:none}    
+.menu:hover{ color: black; text-decoration:none}
+.menu:active{color: black; text-decoration:none}
 
 /*seudo clases*/
 
@@ -58,5 +101,3 @@ li:hover{
     background-color: blue;
     box-shadow: 0 0 10px black inset;
 }
-    
-    
