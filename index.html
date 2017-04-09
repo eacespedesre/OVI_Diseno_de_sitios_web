@@ -2,6 +2,34 @@
     
 <html lang="es" class"no-js">
 <head>
+    <SCRIPT LANGUAGE="Javascript">
+function getexpirydate( nodays){
+var UTCstring;
+Today = new Date();
+nomilli=Date.parse(Today);
+Today.setTime(nomilli+nodays*24*60*60*1000);
+UTCstring = Today.toUTCString();
+return UTCstring;
+}
+function getcookie(cookiename) {
+ var cookiestring=""+document.cookie;
+ var index1=cookiestring.indexOf(cookiename);
+ if (index1===-1 || cookiename==="") return "";
+ var index2=cookiestring.indexOf(';',index1);
+ if (index2==-1) index2=cookiestring.length;
+ return unescape(cookiestring.substring(index1+cookiename.length+1,index2));
+}
+function setcookie(name,value,duration){
+cookiestring=name+"="+escape(value)+";EXPIRES="+getexpirydate(duration);
+document.cookie=cookiestring;
+if(!getcookie(name)){
+return false;
+}
+else{
+return true;
+}
+}
+</SCRIPT>
     <meta charset="UTF-8">
     <title>OVI DISEÑO DE SITIOS WEB</title>
     <link rel="stylesheet" href="css/normalize.css">
@@ -10,6 +38,7 @@
     
 </head>
 <body>
+
     <script src="js/modernizr.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/jquery-3.2.0.js"></script>
@@ -101,6 +130,18 @@
         <h4>
     2017 TODOS LOS DERECHOS RESERVADOS
     <h4>
+<script language="javascript">
+count= getcookie("counter");
+if(isNaN(count)){
+y=setcookie('counter',0,1);
+count=0;
+}
+count++;
+document.write("VISITANTES "+count);
+y=setcookie('counter',count,1);
+// fin de obtencion de cookie
+// -->
+</script>
 </footer>
 </div>
 
