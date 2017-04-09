@@ -77,9 +77,9 @@ nav{
     height: 50px;
     background-color: #F0B429;
     border-radius: 5px;
+    border-bottom-right-radius: 0; 
     margin-bottom: 0px;
     display: block;
-    z-index: 2;
 }
 ul{
     
@@ -121,6 +121,7 @@ li:hover ul{
     }
 
 section{
+    
     width: 1300px;
     /*background-color: white;*/
     height: auto;
@@ -128,18 +129,19 @@ section{
     float: left;
 }
 article{
-    background-color: #005883;
-    width: 980px;
+    width: 700px;
     float: left;
-    margin-right: 30px;
 }
-/*aside{
+aside{
+    /*background-color: blue;*/
     width: 280px;
     float: left;
     margin-left: 20px;
     height: 490px;
     padding-left: 19px;
-}*/
+    
+    /*margin-left: 20px;*/
+}
 figure{
     margin: 0;
     padding: 0;
@@ -154,12 +156,11 @@ hr{
     z-index: -1;
     background-color: #005883;
     border-color: #F0B429;
-    left: 1000px;
+    left: 714px;
     width:4px;
     height: 420px;
     position: absolute;
     margin: 0;
-    float: left;
 }
 p{
     color: white;
@@ -170,7 +171,6 @@ p{
 }
 
 footer{
-    z-index: -1;
     position: absolute;
     height: 70px;
     background-color: #F0B429;
@@ -190,9 +190,9 @@ footer img{
 /*color de el texto en el menu desplegable*/
 /*----------------------------------------*/
 .menu:link{color: white; text-decoration:none}
-.menu:visited{color:white; text-decoration:none}    
+.menu:visited{color: white; text-decoration:none}    
 .menu:hover{ color: #005883;text-decoration:none}
-.menu:active{color: #005883; text-decoration:none}
+.menu:active{color: white; text-decoration:none}
 .menu:focus{color: white; text-decoration:none}
 
 /*seudo clases*/

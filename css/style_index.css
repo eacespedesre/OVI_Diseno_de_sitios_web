@@ -77,9 +77,9 @@ nav{
     height: 50px;
     background-color: #F0B429;
     border-radius: 5px;
+    border-bottom-right-radius: 0; 
     margin-bottom: 0px;
     display: block;
-    z-index: 2;
 }
 ul{
     
@@ -121,26 +121,25 @@ li:hover ul{
     }
 
 section{
+    
     width: 1300px;
+    /*background-color: white;*/
+    height: auto;
     z-index: -1;
-    display: block;
-    /*float: left;*/
-
+    float: left;
 }
-
 article{
-    background-color: #005883;
     width: 700px;
     float: left;
-
 }
 aside{
     /*background-color: blue;*/
     width: 280px;
     float: left;
     margin-left: 20px;
-    height: auto;
+    height: 490px;
     padding-left: 19px;
+    
     /*margin-left: 20px;*/
 }
 figure{
@@ -152,12 +151,6 @@ img{
     
     width: 250px;
     height: auto;
-}
-section hr{
-    left: 0;
-    width:1300px;
-    height: 1px;
-    border: 0;
 }
 hr{
     z-index: -1;
@@ -178,13 +171,11 @@ p{
 }
 
 footer{
-    z-index: -1;
-    /*position: static;*/
+    position: absolute;
     height: 70px;
     background-color: #F0B429;
     width: 100%;
-    /*top: 630px;*/
-    bottom: 1px;
+    top: 630px;
 }
 footer img{
     margin: 0px;
@@ -199,9 +190,9 @@ footer img{
 /*color de el texto en el menu desplegable*/
 /*----------------------------------------*/
 .menu:link{color: white; text-decoration:none}
-.menu:visited{color:white; text-decoration:none}    
+.menu:visited{color: white; text-decoration:none}    
 .menu:hover{ color: #005883;text-decoration:none}
-.menu:active{color: #005883; text-decoration:none}
+.menu:active{color: white; text-decoration:none}
 .menu:focus{color: white; text-decoration:none}
 
 /*seudo clases*/
