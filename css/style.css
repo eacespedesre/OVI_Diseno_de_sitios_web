@@ -40,17 +40,25 @@ h3{
     color: #F0B429;
 }
 
-header{
+h4{
+    margin-top: 5px;
+    padding: 0px;
+    text-align: center;
+    font-size: 15px;
+    color: #005883;
+    margin-bottom: 5px;
     
+}
+header{
     background-image: url(../img/UNAD1.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: 200px 145px;
-    width: 1300px;
+    width: 1250px;
     height: 145px;
     background-color: rgba(255, 255, 255, 0);
     margin-bottom: 15px;
-
+    margin-left: 50px;
 }
 nav{
     text-align: center;
@@ -58,10 +66,9 @@ nav{
     height: 50px;
     background-color: #F0B429;
     border-radius: 5px;
-
-    margin-bottom: 5px;
+    border-bottom-right-radius: 0; 
+    margin-bottom: 0px;
     display: block;
-    
 }
 ul{
     
@@ -103,10 +110,61 @@ li:hover ul{
     }
 
 section{
-    width: 900px;
+    
+    width: 1300px;
     /*background-color: white;*/
-    height: 600px;
+    height: auto;
+    z-index: -1;
     float: left;
+}
+article{
+    width: 700px;
+    float: left;
+}
+aside{
+    /*background-color: blue;*/
+    width: 280px;
+    float: left;
+    margin-left: 20px;
+    height: 490px;
+    padding-left: 19px;
+    
+    /*margin-left: 20px;*/
+}
+figure{
+    margin: 0;
+    padding: 0;
+
+}
+img{
+    
+    width: 250px;
+    height: auto;
+}
+hr{
+    z-index: -1;
+    background-color: #005883;
+    border-color: #F0B429;
+    left: 714px;
+    width:4px;
+    height: 420px;
+    position: absolute;
+    margin: 0;
+}
+p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 10px;
+
+}
+
+footer{
+    position: absolute;
+    height: 70px;
+    background-color: #F0B429;
+    width: 1300px;
+    top: 630px;
 }
 /*clases*/
 .ancho_menu_home{width: 900px;}
@@ -124,5 +182,6 @@ section{
 
 li:hover{
     background-color: #F0B429;
+    z-index: 1
     
 }
