@@ -122,24 +122,25 @@ li:hover ul{
 
 section{
     width: 1300px;
-    /*background-color: white;*/
-    height: auto;
     z-index: -1;
-    float: left;
+    display: block;
+    /*float: left;*/
+
 }
+
 article{
     background-color: #005883;
     width: 700px;
     float: left;
+
 }
 aside{
     /*background-color: blue;*/
     width: 280px;
     float: left;
     margin-left: 20px;
-    height: 490px;
+    height: auto;
     padding-left: 19px;
-    
     /*margin-left: 20px;*/
 }
 figure{
@@ -151,6 +152,12 @@ img{
     
     width: 250px;
     height: auto;
+}
+section hr{
+    left: 0;
+    width:1300px;
+    height: 1px;
+    border: 0;
 }
 hr{
     z-index: -1;
@@ -172,11 +179,12 @@ p{
 
 footer{
     z-index: -1;
-    position: absolute;
+    /*position: static;*/
     height: 70px;
     background-color: #F0B429;
     width: 100%;
-    top: 630px;
+    /*top: 630px;*/
+    bottom: 1px;
 }
 footer img{
     margin: 0px;
