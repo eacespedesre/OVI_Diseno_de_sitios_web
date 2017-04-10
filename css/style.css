@@ -13,7 +13,6 @@
     
 body {
     background-color: #005883;
-    width:100%;
 }
 h1{
     margin-top: 35px;
@@ -65,7 +64,7 @@ header{
     background-position: left;
     background-repeat: no-repeat;
     background-size: 200px 145px;
-    width: 96.15%;
+    width: 1250px;
     height: 145px;
     background-color: rgba(255, 255, 255, 0);
     margin-bottom: 15px;
@@ -129,19 +128,12 @@ section{
     float: left;
 }
 article{
-    width: 700px;
+    width: 980px;
     float: left;
+    margin-right: 30px;
+    margin-left: 10px;
 }
-aside{
-    /*background-color: blue;*/
-    width: 280px;
-    float: left;
-    margin-left: 20px;
-    height: 490px;
-    padding-left: 19px;
-    
-    /*margin-left: 20px;*/
-}
+
 figure{
     margin: 0;
     padding: 0;
@@ -156,7 +148,7 @@ hr{
     z-index: -1;
     background-color: #005883;
     border-color: #F0B429;
-    left: 714px;
+    left: 1000px;
     width:4px;
     height: 420px;
     position: absolute;
@@ -174,7 +166,7 @@ footer{
     position: absolute;
     height: 70px;
     background-color: #F0B429;
-    width: 100%;
+    width: 1300px;
     top: 630px;
 }
 footer img{
