@@ -59,6 +59,16 @@ h5{
     margin-bottom: 5px;
     
 }
+
+h6{
+    margin-top: 15px;
+    margin-left: 30px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 25px;
+    margin-bottom: 0px;
+    text-align: left;
+    color: #F0B429;
+}
 header{
     background-image: url(../img/UNAD1.png);
     background-position: left;
@@ -137,8 +147,14 @@ article{
 figure{
     margin: 0;
     padding: 0;
-
+    text-align: center;
 }
+
+figure img{
+    width: 850px;
+    height: auto;
+}
+
 img{
     
     width: 250px;
@@ -167,7 +183,7 @@ footer{
     height: 70px;
     background-color: #F0B429;
     width: 1300px;
-    top: 630px;
+    top: 1630px;
 }
 footer img{
     margin: 0px;
@@ -176,8 +192,8 @@ footer img{
     
 }
 /*clases*/
-.ancho_menu_home{width: 900px;}
-.ancho_menu_paginas{width: 970px;}
+/*.ancho_menu_home{width: 900px;}
+.ancho_menu_paginas{width: 970px;}*/
 
 /*color de el texto en el menu desplegable*/
 /*----------------------------------------*/
@@ -187,6 +203,11 @@ footer img{
 .menu:active{color: white; text-decoration:none}
 .menu:focus{color: white; text-decoration:none}
 
+.articulo:link{color: white; text-decoration:none}
+.articulo:visited{color: white; text-decoration:none}    
+.articulo:hover{ color: black;text-decoration:none}
+.articulo:active{color: white; text-decoration:none}
+.articulo:focus{color: white; text-decoration:none}
 /*seudo clases*/
 
 li:hover{
