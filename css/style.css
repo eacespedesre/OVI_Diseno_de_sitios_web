@@ -97,7 +97,7 @@ ul{
     display: inline-block;
 }    
  
- li{ 
+nav ul li{
     float: left;
     list-style-type: none;
     background-color: #F0B429;
@@ -111,8 +111,30 @@ ul{
     padding-top: 8px;
     padding-bottom: 5px;
     }
+article ul{
+    background-color: transparent;
+    padding: 0;
+    margin-left: 60px;
+    margin-top: 20px;
+    display: block;
 
+    
+    
+}
 
+article ul li{
+    background-color: transparent;
+    font-size: 20px;
+    position: relative;
+    float: none;
+    margin: 1px;
+    padding: 0px;
+    list-style-type: circle;
+    color: white;
+    text-align: justify;
+    
+
+}
  
 li ul{
        position: inherit;
@@ -209,7 +231,13 @@ footer img{
 .articulo:active{color: white; text-decoration:none; font-style: italic}
 .articulo:focus{color: white; text-decoration:none; font-style: italic}
 /*seudo clases*/
-
+article ul:hover{
+    background-color: transparent; 
+}
+article ul li:hover{
+    background-color: transparent;
+    
+}
 li:hover{
     background-color: #F0B429;
     z-index: 1
