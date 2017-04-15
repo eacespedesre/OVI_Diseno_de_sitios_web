@@ -91,13 +91,13 @@ nav{
     display: block;
 }
 ul{
-    
     margin: 0px;
     padding: 0px;
     display: inline-block;
 }    
  
 nav ul li{
+    z-index: 1 !important;
     float: left;
     list-style-type: none;
     background-color: #F0B429;
@@ -111,6 +111,10 @@ nav ul li{
     padding-top: 8px;
     padding-bottom: 5px;
     }
+nav ul li ul li{
+    float: none;
+    position: relative;
+}
 article ul{
     background-color: transparent;
     padding: 0;
@@ -152,20 +156,23 @@ li:hover ul{
     }
 
 section{
-    
     width: 1300px;
     /*background-color: white;*/
     height: auto;
-    z-index: -1;
-    float: left;
+    /*float: left;*/
 }
 article{
     width: 980px;
-    float: left;
+    /*float: left;*/
     margin-right: 30px;
     margin-left: 10px;
+    z-index: 0;
 }
-
+aside{
+    float: right;
+    z-index:  -1 !important;
+    margin-right: 20px;
+}
 figure{
     margin: 0;
     padding: 0;
@@ -193,6 +200,7 @@ hr{
     margin: 0;
 }
 p{
+    z-index: 0;
     color: white;
     font-size: 20px;
     text-align: justify;
@@ -205,7 +213,8 @@ footer{
     height: 70px;
     background-color: #F0B429;
     width: 1300px;
-    top: 2500px;
+    clear: both;
+    /*top: 2500px;*/
 }
 footer img{
     margin: 0px;
@@ -230,6 +239,9 @@ footer img{
 .articulo:hover{ color: black;text-decoration:none; font-style: italic}
 .articulo:active{color: white; text-decoration:none; font-style: italic}
 .articulo:focus{color: white; text-decoration:none; font-style: italic}
+
+.foto{width: 350px; height: auto}
+.texto{width: inherit; color:white; font-size: 25px;text-align: center;}
 /*seudo clases*/
 article ul:hover{
     background-color: transparent; 
@@ -240,6 +252,6 @@ article ul li:hover{
 }
 li:hover{
     background-color: #F0B429;
-    z-index: 1
+    z-index: 1 !important;
     
 }
