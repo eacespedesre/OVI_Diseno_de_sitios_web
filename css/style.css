@@ -207,6 +207,12 @@ p{
     margin-left: 10px;
 
 }
+iframe{
+    margin-left: 267.5px;
+    align-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
 footer{
     position: absolute;
