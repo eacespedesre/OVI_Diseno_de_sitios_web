@@ -167,11 +167,14 @@ article{
     margin-right: 30px;
     margin-left: 10px;
     z-index: 0;
+    position: relative;
 }
 aside{
     float: right;
     z-index:  -1 !important;
     margin-right: 20px;
+    position: absolute;
+    right: 0;
 }
 figure{
     margin: 0;
@@ -219,7 +222,6 @@ footer{
     height: 70px;
     background-color: #F0B429;
     width: 1300px;
-    clear: both;
     /*top: 2500px;*/
 }
 footer img{
@@ -246,8 +248,8 @@ footer img{
 .articulo:active{color: white; text-decoration:none; font-style: italic}
 .articulo:focus{color: white; text-decoration:none; font-style: italic}
 
-.foto{width: 350px; height: auto}
-.texto{width: inherit; color:white; font-size: 25px;text-align: center;}
+.foto{width: 350px; height: auto;}
+.texto{width: inherit; color:white; font-size: 25px;}
 /*seudo clases*/
 article ul:hover{
     background-color: transparent; 
